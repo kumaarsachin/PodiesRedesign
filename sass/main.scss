@@ -1,0 +1,366 @@
+@import "layout.scss";
+@import "helpers.scss";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+*,html,body {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', 'sans-serif';
+	position: relative;
+	font-size: 0.9em;
+	font-weight: 400;
+	color: $default;
+}
+
+p {
+	line-height: 1.6em;
+	margin-top: 2em;
+}
+
+svg {
+	display: block;
+	overflow: hidden;
+}
+/*========================================================*/
+/*SVG Styling--- Hero Section*/
+/*========================================================*/
+
+.footballScene {
+	width: 100%;
+	z-index: 1;
+	height: auto;
+}
+
+.productFirstCloud, .productSecondCloud, .productThirdCloud {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	img {
+		margin-top: 16%;
+		width: 20%;
+		position: relative;
+		z-index: 100;
+	}
+	h2 {
+		margin-top: 4%;
+		position: relative;
+		z-index: 100;
+	}
+}
+
+.mountains {
+	width: 100%;
+	z-index: 8; 
+	height: auto;
+}
+
+.firstRocket {
+	width: 90%;
+	height: auto;
+}
+
+.secondRocket {
+	width: 75%;
+}
+
+.thirdRocket {
+	width: 80%;
+	height: auto;
+}
+
+.productBg {
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+	top: -22%;
+	display: block;
+	height: auto;
+}
+
+.clientRightCloud {
+	width: 150%;
+	position: absolute;
+	bottom: -14%;
+	z-index: -10;
+	height: auto;
+	left: -30%;
+}
+
+.clientLeftCloud {
+	width: 140%;
+	position: absolute;
+	bottom: 23%;
+	z-index: -10;
+	height: auto;
+	left: -20%;
+}
+
+.clientCentreCloud {
+	width: 300%;
+	position: absolute;
+	bottom: -8%;
+	z-index: 100;
+	height: auto;
+	left: -110%;
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+}
+
+.partnerBg {
+	fill: #E5E5E5;
+	width: 100%;
+	position: absolute;
+	z-index: -20;
+	top: -50%;
+	height: auto;
+}
+
+.clientPartnerBg {
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+
+.firstBaloon {
+	position: relative;
+	width: 80%;
+	z-index: 60;
+	height: auto;
+	-webkit-transform: rotateZ(4deg);
+	        transform: rotateZ(4deg);
+}
+
+.secondBaloon {
+	width: 40%;
+	height: auto;
+}
+
+.thirdBaloon {
+	width: 20%;
+	height: auto;
+}
+
+.techIllustration, .nontechIllustration {
+	width: 100%;
+	height: auto;
+	margin-top: 10%;
+}
+
+.footerBg {
+	position: absolute;
+	width: 100%;
+	z-index: -50;
+	height: auto;
+	.st0{fill:#9CE8A3;}
+  .st1{fill:#06001e;
+  		opacity: 1;}
+}
+
+.teamIllustration {
+	width: 100%;
+	height: auto;
+}
+
+/*============================================*/
+/*Others*/
+/*==============================================*/
+.logo {
+	fill: $accentColor;
+	width: 70%;
+	height: auto;
+}
+
+.footer {
+	position: absolute;
+	z-index: -40;
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+
+	.footerBg2 {
+	fill: #62b76e;
+	}
+
+	.footerBg1 {
+		fill:#06001e;
+	}
+}
+
+.headerNav {
+	ul {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		list-style-type: none;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+	}
+}
+
+.heroText {
+	position: relative;
+	top: 3em;
+}
+
+.hero__illustration {
+	position: relative;
+}
+
+.product__container {
+	position: relative;
+	z-index: 8;
+}
+
+.cloudContainer {
+	position: relative;
+	top: 450px;
+}
+
+.headerNav {
+	a {
+		padding: 1em 2em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 0.9em;
+		color: $default;
+		&:hover {
+			color: $accentColor;
+		}
+	}
+}
+
+h1 {
+	position: relative;
+	font-weight: 300;
+	font-size: 2.842em;
+	z-index: 10;
+
+	span {
+		color: $accentColor;
+		font-weight: 400;
+	}
+}
+
+.client1__illustration, .client2__illustration, .client3__illustration {
+	position: relative;
+}
+
+.product {
+	position: relative;
+
+	&:after {
+		content:"";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom:0;
+		top: -1px;
+		background-color: $blue;
+		z-index: -2
+	}
+}
+
+.partner {
+	position: relative;
+
+	&:after {
+		content:"";
+		position: absolute;
+		z-index: -100;
+		width: 100%;
+		height: 100%;
+		bottom:0;
+		background-image: -webkit-gradient(linear,left top, left bottom,color-stop(40%, $blue),color-stop(+, $blue));
+		background-image: linear-gradient($blue 40%,$blue + 100);
+	}
+
+	.clientPartnerBg {
+		top: 50%;
+		width: 70%;
+		left: 20%;
+		z-index: -40;
+	}
+}
+
+.partner__container {
+	margin-top: 8%;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 2.1em;
+}
+
+.about {
+	p {
+		padding: 0 4em;
+	}
+}
+
+.team {
+	margin-top: 7%;
+}
+
+footer {
+	margin-top: 5%;
+	position: relative;
+	overflow: hidden;
+
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 50%;
+		z-index: -60;
+		background-color: $blue;
+	}
+}
+
+.footerNav {
+		margin-top: 12%;
+
+	h3 {
+		text-transform: uppercase;
+		color: $default;
+		margin-bottom: 1em;
+	}
+
+	ul {
+		list-style-type: none;
+
+		a {
+			text-decoration: none;
+			color: $default - 60;
+			font-size: 0.9em;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+}
+
